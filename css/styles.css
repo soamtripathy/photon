@@ -27,7 +27,15 @@ ul {
   padding-right: 20px;
   color: #ffffff;
 }
-
+.dark{
+  padding: 15px;
+  background: linear-gradient(#000000, #2D3436);
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 45px;
+}
 /* Header */
 header {
   background: #100f0f;
@@ -79,6 +87,13 @@ header a:hover {
   color: #cccccc;
   font-weight: bold;
 }
+header .logo img{
+  width: 40px;
+  height: 40px;
+  padding-right: 30px;
+  float: left;
+
+}
 
 /* Showcase */
 #showcase {
@@ -129,15 +144,49 @@ header a:hover {
   text-align: center;
   width: 30%;
   padding: 3px;
-  border: 2px solid #100f0f;
+  border: 2px solid #cccccc;
   margin: 10px;
   border-radius: 10px;
+  background: #e6e6e6;
 }
 
 #boxes .box img {
   width: 90px;
   height: 90px;
   padding-top: 20px;
+}
+section#main{
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* sidebar */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+
+}
+/* main-col */
+article#main-col{
+  float: left;
+  width: 60%;
+
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+
+}
+/* Sevices */
+ul.services li{
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+
+
 }
 footer {
   padding: 20px;
@@ -156,4 +205,40 @@ footer a:hover {
   background-color: #cccccc;
   color: #100f0f;
   border-radius: 2px;
+}
+@media(max-width: 768px){
+  header #branding, header nav, header nav li,
+  #newsletter h1, #newsletter form,  
+  article#main-col, aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  header .logo img{
+    display: none;
+  }
+  showcase h1{
+    margin-top: 40px;
+
+  }
+  #newsletter button, .quote button{
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type= "email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+
+  }
+  #boxes .box{
+    float: none;
+    text-align: center;
+    width: 90%;
+
+
+  }
 }
